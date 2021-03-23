@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+
+task:
+  power: # 场站实时数据
+    enable: false  #是否启用
+    cron: 0 5/15 * * * ? # 每15分钟执行

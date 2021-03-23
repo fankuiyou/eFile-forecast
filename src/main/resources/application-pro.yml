@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    db1:
+      url: jdbc:mysql://11.14.34.162:3306/nanwang
+      username: dky
+      password: dky100200
+      driver-class-name: com.mysql.jdbc.Driver
+    db2:
+      url: jdbc:mysql://11.14.34.162:3306/xnysf_fzx
+      username: dky
+      password: dky100200
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: false
+
+logging:
+  file:
+    path: /home/dky/neoda/log/forecast
+  level:
+    root: info
+
+zip-directory:
+  zipPath: /home/dky/data
+  dirPath: /home/dky/neoda/forecastFiles
+  list:
+    - gd
+#    - guiz
+#    - gx
+#    - hn
+#    - yn
